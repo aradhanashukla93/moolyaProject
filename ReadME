@@ -1,0 +1,19 @@
+In this project all the required API tests are kept under class MoolyaAPITestCases with below method names: 
+	1.verifyGetListUserAPI
+	2.verifyGetSingleUserAPI
+	3.verifyPostRegisterSuccessfulAPI
+	4.verifyUpdateUserAPI
+	5.verifyDeleteUserAPI
+	
+	testng.xml is kept at project level through which we can run those methods.
+	
+	Report generation part handles under :src/test/resources/ReportGeneration/ExtentReportResults.html
+	
+ Note:
+ 	
+	For below mentioned methods with rest-assured library we are not getting correct response though we have provided valid data :
+	1. verifyPostRegisterSuccessfulAPI
+	2. verifyUpdateUserAPI
+	3. verifyDeleteUserAPI
+	
+	Above methods 'post','put' and 'delete' are validated against PostMan as well, getting same response.
